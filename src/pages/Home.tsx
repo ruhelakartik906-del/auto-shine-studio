@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { ArrowRight, Shield, Sparkles, Droplets, Star, Award, Clock, CheckCircle2, Quote, ChevronLeft, ChevronRight, Car, SprayCan } from "lucide-react";
+import { ArrowRight, Shield, Sparkles, Droplets, Star, Award, Clock, CheckCircle2, Quote, ChevronLeft, ChevronRight, Car, SprayCan, Phone, MessageCircle } from "lucide-react";
 import heroCar from "@/assets/hero-car.jpg";
 import ceramic from "@/assets/service-ceramic.jpg";
 import ppf from "@/assets/service-ppf.jpg";
@@ -118,6 +118,82 @@ const Home = () => {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PREMIUM FLEET */}
+      <section className="py-24 border-b border-border bg-secondary/20">
+        <div className="container mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">Featured Cars</p>
+            <h2 className="font-display text-4xl md:text-5xl">Our Premium Fleet</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
+            {[
+              {
+                name: "Mahindra Scorpio-N (Z8 L)",
+                img: scorpio,
+                specs: [
+                  { k: "Model", v: "2024 (New)" },
+                  { k: "Engine", v: "2.2L mHawk Diesel" },
+                  { k: "Transmission", v: "6-Speed AT" },
+                  { k: "Drive", v: "4WD (4XPLOR)" },
+                ],
+                features: ["Electric Sunroof", "Sony 3D Immersive Audio", "Adrenox Connectivity", "6 Airbags Safety"],
+              },
+              {
+                name: "Toyota Fortuner (Legender)",
+                img: fortuner,
+                specs: [
+                  { k: "Model", v: "2024" },
+                  { k: "Engine", v: "2.8L Turbo Diesel" },
+                  { k: "Transmission", v: "6-Speed AT" },
+                  { k: "Drive", v: "4x4 High/Low Range" },
+                ],
+                features: ["Ventilated Front Seats", "Power Back Door", "Ambient Lighting", "Tough 4x4 Capabilities"],
+              },
+            ].map((car) => (
+              <div
+                key={car.name}
+                className="flex flex-col bg-card rounded-2xl shadow-lg overflow-hidden border border-border hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 ease-in-out"
+              >
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img src={car.img} alt={car.name} loading="lazy" className="h-full w-full object-cover" />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="font-display text-2xl mb-5">{car.name}</h3>
+
+                  <div className="grid grid-cols-2 gap-3 mb-6">
+                    {car.specs.map((s) => (
+                      <div key={s.k} className="rounded-lg border border-border bg-background/40 p-3">
+                        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">{s.k}</p>
+                        <p className="text-sm font-medium mt-1">{s.v}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <ul className="space-y-2 mb-6 flex-1">
+                    {car.features.map((f) => (
+                      <li key={f} className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-gold shrink-0" />
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="grid grid-cols-2 gap-3 mt-auto">
+                    <a href="tel:+910000000000" className="inline-flex items-center justify-center gap-2 w-full bg-red-600 hover:bg-red-700 text-white text-sm font-medium py-3 rounded-lg transition-colors">
+                      <Phone className="h-4 w-4" /> Call Now
+                    </a>
+                    <a href="https://wa.me/910000000000" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 w-full bg-red-600 hover:bg-red-700 text-white text-sm font-medium py-3 rounded-lg transition-colors">
+                      <MessageCircle className="h-4 w-4" /> Chat Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
