@@ -278,6 +278,7 @@ const data: Record<string, ServiceData> = {
       "Improves Cabin Hygiene",
       "Restores Premium Interior Feel",
       "Protects Interior Surfaces",
+      "Restores Fresh Cabin Feel",
     ],
   },
   "exterior-detailing": {
@@ -796,7 +797,7 @@ const data: Record<string, ServiceData> = {
     ],
     removes: {
       heading: "Paint Problems We Help Improve",
-      items: ["Paint Dullness", "Light Swirl Marks", "Minor Surface Defects", "Oxidation Effects", "Water Spot Marks", "Improper Wash Marks", "Faded Paint Appearance"],
+      items: ["Paint Dullness", "Light Swirl Marks", "Minor Surface Defects", "Oxidation Effects", "Water Spot Marks", "Improper Wash Marks"],
     },
     whyUs: [
       "Skilled Detailing Experts",
@@ -805,7 +806,6 @@ const data: Record<string, ServiceData> = {
       "Safe Paint Enhancement Techniques",
       "Luxury Finishing Standards",
       "Attention to Detail",
-      "Professional Paint Care Solutions",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
     whatIs: {
@@ -823,9 +823,7 @@ const data: Record<string, ServiceData> = {
         "Paint Surface Inspection",
         "Surface Decontamination",
         "Clay Bar Treatment",
-        "Machine Rubbing Process",
         "Multi-Stage Polishing",
-        "Gloss Enhancement",
         "Paint Protection Finishing",
       ],
     },
@@ -893,7 +891,6 @@ const data: Record<string, ServiceData> = {
       "Luxury Finishing Standards",
       "Attention to Detail",
       "Professional Detailing Equipment",
-      "Customized Car Care Solutions",
     ],
     vehicles: ["Luxury Sedans", "Premium SUVs", "Sports Cars", "Exotic Vehicles", "Performance Cars"],
     whatIs: {
@@ -961,7 +958,7 @@ const data: Record<string, ServiceData> = {
     ],
     removes: {
       heading: "Anti Rust Coating Protects Against",
-      items: ["Rust Formation", "Corrosion", "Moisture Damage", "Mud & Dirt Build-Up", "Metal Surface Deterioration", "Water Exposure", "Road Debris Damage"],
+      items: ["Rust Formation", "Corrosion", "Moisture Damage", "Mud & Dirt Build-Up", "Metal Surface Deterioration", "Water Exposure"],
     },
     whyUs: [
       "Premium Anti Rust Coating Products",
@@ -970,7 +967,6 @@ const data: Record<string, ServiceData> = {
       "Experienced Car Care Professionals",
       "Advanced Underbody Cleaning",
       "Attention to Detail",
-      "Premium Service Standards",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Daily Driven Vehicles", "Commercial Vehicles", "Premium Bikes"],
     whatIs: {
@@ -990,7 +986,6 @@ const data: Record<string, ServiceData> = {
         "Surface Drying",
         "Anti Rust Coating Application",
         "Protective Layer Finishing",
-        "Final Quality Inspection",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -1048,7 +1043,6 @@ const data: Record<string, ServiceData> = {
       "Premium Finishing Standards",
       "Attention to Detail",
       "Experienced Detailing Professionals",
-      "Luxury Vehicle Care Experience",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
     whatIs: {
@@ -1067,6 +1061,7 @@ const data: Record<string, ServiceData> = {
         "Alloy shine has faded",
         "Wheels are difficult to clean",
         "Tire finish appears dry",
+        "Wheel Surface Inspection",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
