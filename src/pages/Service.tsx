@@ -249,11 +249,11 @@ const data: Record<string, ServiceData> = {
       ],
     },
     faqs: [
-      { q: "How long does paint correction last?", a: "Paint correction permanently removes defects. With proper aftercare and protection like ceramic coating or PPF, the results can last for years." },
-      { q: "Does paint correction prevent future scratches?", a: "Paint correction restores the surface but does not prevent new damage. Pair it with ceramic coating or PPF for long-term protection." },
-      { q: "Is paint correction safe for my car's clear coat?", a: "Yes — our specialists measure paint thickness and use calibrated polishers and compounds to safely remove defects without damaging the clear coat." },
-      { q: "Do I need paint correction before ceramic coating?", a: "Highly recommended. A corrected surface ensures better bonding, deeper gloss and maximum coating performance." },
-      { q: "What's the difference between rubbing and paint correction?", a: "Rubbing is a single aggressive step often used to remove heavy defects, while paint correction is a multi-stage process designed for safe, refined and long-lasting results." },
+      { q: "Does paint correction remove scratches?", a: "Paint correction removes minor scratches, swirl marks, holograms and paint imperfections. Deep scratches may require additional repair work." },
+      { q: "Is paint correction safe for car paint?", a: "Yes, professional paint correction performed by trained experts is safe and enhances paint appearance." },
+      { q: "How long does paint correction take?", a: "The time depends on vehicle condition, paint quality and correction stages required." },
+      { q: "Should I get ceramic coating after paint correction?", a: "Yes, ceramic coating helps protect the corrected paint and maintain gloss for longer." },
+      { q: "What is the difference between polishing and paint correction?", a: "Paint correction permanently removes defects using machine polishing, while basic polishing mainly enhances temporary shine." },
     ],
   },
   "car-detailing": {
