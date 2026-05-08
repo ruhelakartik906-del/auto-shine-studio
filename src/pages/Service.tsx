@@ -22,6 +22,7 @@ type ServiceData = {
   models?: string[];
   maintenance?: string[];
   comparison?: { heading: string; intro: string; items: string[] };
+  faqs?: { q: string; a: string }[];
 };
 
 const data: Record<string, ServiceData> = {
@@ -95,6 +96,13 @@ const data: Record<string, ServiceData> = {
         "Permanent Surface Protection",
       ],
     },
+    faqs: [
+      { q: "How long does PPF last?", a: "Premium Paint Protection Film can last several years depending on maintenance and usage conditions." },
+      { q: "Does PPF protect against scratches?", a: "Yes, PPF protects against minor scratches, swirl marks, stone chips and road debris damage." },
+      { q: "Is PPF worth it for new cars?", a: "Yes, PPF helps preserve original paint quality and protects your vehicle from daily wear and tear." },
+      { q: "Which is better — Ceramic Coating or PPF?", a: "PPF provides physical impact protection, while ceramic coating mainly enhances gloss and hydrophobic performance. Many customers combine both for maximum protection." },
+      { q: "Do you provide matte and gloss PPF?", a: "Yes, CLNHYGEN offers both matte PPF and gloss PPF installation services in Meerut." },
+    ],
   },
   "ceramic-coating": {
     eyebrow: "Long Lasting Shine & Protection",
@@ -102,23 +110,73 @@ const data: Record<string, ServiceData> = {
     subtitle: "A durable nano-protective layer over your paint that enhances gloss and protects against environmental contaminants.",
     img: ceramic,
     intro:
-      "Our ceramic coating services create a durable nano-protective layer over your vehicle's paint that enhances gloss and protects against environmental contaminants. We provide professional ceramic and graphene coating services in Meerut using high-performance coating products for maximum durability and shine.",
+      "Welcome to CLNHYGEN — your trusted destination for premium ceramic coating services in Meerut. Our professional ceramic coating process creates a durable protective layer over your vehicle's paint that helps protect against UV rays, dirt, water spots, oxidation, bird droppings and environmental contaminants — while enhancing gloss, smoothness and long-term shine.",
     benefits: [
       "Deep Mirror Gloss Finish",
-      "Water Repellent Hydrophobic Effect",
+      "Hydrophobic Water Beading",
       "UV & Oxidation Protection",
       "Easier Vehicle Cleaning",
       "Enhanced Paint Depth",
+      "Smooth & Slick Finish",
       "Long-Term Surface Protection",
     ],
+    removes: {
+      heading: "Ceramic Coating Protects Against",
+      items: ["UV Rays", "Paint Oxidation", "Dirt & Dust", "Water Spots", "Bird Droppings", "Chemical Contaminants", "Minor Surface Damage"],
+    },
     whyUs: [
-      "High-Performance Ceramic & Graphene Products",
-      "Trained Coating Specialists",
-      "Dust-Controlled Application Bay",
-      "Long-Lasting Hydrophobic Finish",
-      "Maintenance Guidance Included",
+      "Premium Quality Coating Products",
+      "Skilled Detailing Professionals",
+      "Multi-Stage Paint Preparation",
+      "Machine Paint Correction Before Coating",
+      "Advanced Application Techniques",
+      "Luxury Finish Standards",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
+    whatIs: {
+      heading: "What is Ceramic Coating?",
+      body: "Ceramic coating is a liquid polymer coating applied to your vehicle's paint surface that chemically bonds with the paint to create a long-lasting protective layer. Unlike regular wax or polish, ceramic coating provides durable paint protection with enhanced gloss, hydrophobic properties and easier maintenance.",
+    },
+    finishes: [
+      { name: "Hydrophobic Ceramic Coating", desc: "Creates a hydrophobic layer that repels water, dirt and contaminants — keeping your vehicle cleaner with minimal maintenance and a long-lasting shine." },
+      { name: "Graphene Coating", desc: "Advanced protection beyond traditional coatings — improved heat resistance, enhanced water repellency, reduced water-spot formation and a deeper gloss finish." },
+    ],
+    coverage: {
+      heading: "Paint Preparation Before Ceramic Coating",
+      items: [
+        "Deep Exterior Cleaning",
+        "Surface Decontamination",
+        "Clay Bar Treatment",
+        "Paint Correction & Polishing",
+        "Removal of Swirl Marks & Imperfections",
+      ],
+    },
+    models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Creta", "Verna", "Safari"],
+    maintenance: [
+      "Use pH-neutral shampoo",
+      "Avoid harsh chemicals",
+      "Wash with microfiber cloths",
+      "Follow proper detailing methods",
+      "Schedule periodic maintenance washes",
+    ],
+    comparison: {
+      heading: "Ceramic Coating vs Wax",
+      intro: "A modern long-term paint protection solution — far ahead of traditional wax for maintaining your vehicle's appearance.",
+      items: [
+        "Longer Durability",
+        "Better Paint Protection",
+        "Strong Hydrophobic Performance",
+        "UV Resistance",
+        "Enhanced Surface Hardness",
+        "Superior Gloss Finish",
+      ],
+    },
+    faqs: [
+      { q: "How long does ceramic coating last?", a: "Premium ceramic coating typically lasts 2–5 years depending on the product, application and aftercare." },
+      { q: "Does ceramic coating prevent scratches?", a: "It protects against swirl marks, light scratches, chemical stains and water spots, but it is not a substitute for PPF for stone-chip protection." },
+      { q: "What is graphene coating?", a: "Graphene coating is an advanced evolution of ceramic coating offering better heat resistance, fewer water spots and a deeper gloss." },
+      { q: "Do I need paint correction before coating?", a: "Yes — paint correction removes swirl marks and imperfections so the coating bonds to a flawless surface for the best gloss and durability." },
+    ],
   },
   "paint-correction": {
     eyebrow: "Professional Rubbing & Polishing",
@@ -399,6 +457,32 @@ const Service = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQs */}
+      {s.faqs && (
+        <section className="py-20">
+          <div className="container mx-auto max-w-3xl">
+            <div className="text-center mb-10">
+              <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">FAQ</p>
+              <h3 className="font-display text-3xl md:text-4xl">Frequently Asked Questions</h3>
+            </div>
+            <div className="space-y-4">
+              {s.faqs.map((f, i) => (
+                <details
+                  key={i}
+                  className="group rounded-xl border border-border bg-card p-5 hover:border-gold transition-smooth open:border-gold"
+                >
+                  <summary className="flex items-center justify-between cursor-pointer list-none">
+                    <span className="font-medium text-sm md:text-base pr-4">{f.q}</span>
+                    <ArrowRight className="h-4 w-4 text-gold shrink-0 transition-transform group-open:rotate-90" />
+                  </summary>
+                  <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CONTACT CTA */}
       <section className="py-20">
