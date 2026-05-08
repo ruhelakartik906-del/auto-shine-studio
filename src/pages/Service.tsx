@@ -311,8 +311,6 @@ const data: Record<string, ServiceData> = {
         "Wax & Sealant Protection",
         "Tire Dressing",
         "Alloy Wheel Cleaning",
-        "Exterior Plastic Restoration",
-        "Glass Cleaning & Treatment",
       ],
     },
     whyUs: [
@@ -479,7 +477,6 @@ const data: Record<string, ServiceData> = {
         "Door Dent Repair",
         "Accident Damage Repair",
         "Body Panel Alignment",
-        "Surface Refinishing",
       ],
     },
     whyUs: [
@@ -507,6 +504,7 @@ const data: Record<string, ServiceData> = {
         "Minor Paint Damage",
         "Swirl Marks",
         "Clear Coat Imperfections",
+        "Panel Paint Matching",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -562,7 +560,6 @@ const data: Record<string, ServiceData> = {
         "Surface Scratches",
         "Hazy Headlights",
         "Dull Finish",
-        "UV Damage Effects",
       ],
     },
     whyUs: [
@@ -590,6 +587,7 @@ const data: Record<string, ServiceData> = {
         "Oxidation or Haze",
         "Poor Night Visibility",
         "Dull or Scratched Lens",
+        "Headlight Clarity Check",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -644,8 +642,6 @@ const data: Record<string, ServiceData> = {
         "Plastic Trim Cleaning",
         "Surface Dressing",
         "Rubber Component Cleaning",
-        "Engine Compartment Drying",
-        "Final Finishing Inspection",
       ],
     },
     whyUs: [
@@ -655,7 +651,6 @@ const data: Record<string, ServiceData> = {
       "Attention to Detail",
       "Luxury Finishing Standards",
       "Proper Component Protection",
-      "Professional Engine Bay Restoration",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
     whatIs: {
@@ -675,7 +670,6 @@ const data: Record<string, ServiceData> = {
         "Soft Brush Cleaning",
         "Safe Surface Rinsing",
         "Air Drying & Moisture Removal",
-        "Dressing & Finishing",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
